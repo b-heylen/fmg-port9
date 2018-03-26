@@ -1,18 +1,13 @@
 from ftntlib.ftntlib import FortiManagerJSON
-import json
-import ssl
 import sys
-import getopt
-import getpass
-import base64
 
 devices = []
 output = "NAME;IP;MASK"
 
-hostname = server_IP 
-username = user 
-password = pwd 
-adom = adom 
+hostname = sys.argv[1] 
+username = sys.argv[2] 
+password = sys.argv[3] 
+adom = sys.argv[4] 
 
 fmg = FortiManagerJSON()
 response = fmg.login(hostname, username, password, ssl=True)
