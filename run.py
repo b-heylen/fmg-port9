@@ -9,10 +9,10 @@ import base64
 devices = []
 output = "NAME;IP;MASK"
 
-hostname = "151.162.51.130"
-username = "a59313"
-password = "Pegasu9!Pegasu9!"
-adom = "NGN_Direct-Internet-Egress_5-4"
+hostname = server_IP 
+username = user 
+password = pwd 
+adom = adom 
 
 fmg = FortiManagerJSON()
 response = fmg.login(hostname, username, password, ssl=True)
